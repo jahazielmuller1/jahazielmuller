@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puestos de trabajo en Argentina</title>
+    <link rel="stylesheet" href="Proyecto_empleo/estilo_Empleos Argentina.css">
+    <link rel="shortcut icon" href="LOGO.png" type="image/x-icon"> 
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="container-img">
+            <img class="img-encabezado" src="Proyecto_empleo/Proyecto/Encabezado/Total de empleos por año.png">
+        </div>
+            <h2 class="titulo">Puestos de trabajo registrados en Argentina</h2>
+            <p class="descriccion-header">Este proyecto intenta mostrar el flujo de los empleos registrados a nivel nacional y provincial, para dar un panorama general de como se fue moviendo durante los años y como lo afecto la pandemia a partir de fines de 2018.
+            Tomando como inicio el 2018 hubo una baja del empleo registrado de 12.936.623 millones de empleados a 12.101.430 en 2020, registrando así una caída de 835.193 empleos.
+            Es decir, se perdió un 6,46% de empleos formales en apenas dos años y teniendo una leve recuperación de 2020 a 2021 del 1.29%</p>
+        <div class="listas">
+            <p class="p-listas">A través de este proyecto se intentará contestar a las siguientes preguntas:</p>
+            <ul>
+                <li>Las 5 provincias que más perdieron empleos.</li>
+                <li>Principales industrias a nivel nacional.</li>
+            </ul>
+                
+        </div>
+    
+    </header>
+
+    <main>
+        <div class="container-provincias">
+            <h2 class="titulo-provincias">Las 5 provincias que más perdieron empleos</h2>
+            <p class="p-provincias">El grafico representa 4 provincias y la Capital Federal que se mide con datos apartes que los de Buenos Aires.</p>
+            <div class="provincias">
+                <div class="li-provincias">
+                    <ul class="ul-provincias">
+                        <li><b>Buenos Aires:</b> Tuvo una pérdida de empleo del 6.04% al 2020 y una recuperación del 1.39% al 2021</li>
+                        <li><b>Capital Federal:</b> Tuvo una pérdida de empleo del 7.26% al 2020 y sigue en caída con un 0.26% en el 2021</li>
+                        <li><b>Córdoba:</b> Tuvo una pérdida de empleo del 6.43% al 2020 y una recuperación del 2.8% al 2021</li>
+                        <li><b>Santa Fe:</b> Tuvo una pérdida de empleo del 5.95% y una recuperación de apenas un 0.74% al2021</li>
+                        <li><b>Mendoza:</b> Tuvo una pérdida de empleo del 7.19% al 2020 y una recuperación de apenas el 0.2% al 2021</li>
+                    </ul>
+                </div>
+                <img class="img-provincias" src="Proyecto_empleo/Proyecto/Top 5 provincias/Top 5 provincias con mas empleo.png">
+            </div>
+        </div>
+
+        <div class="container-industrias-glob">
+            <h2 class="titulo-provincias">Principales industrias a nivel nacional</h2>
+            <p class="p-provincias">Las 4 principales industrias con mayor cantidad de empleabilidad y como fueron afectadas por la pandemia, tomado periodo desde 2018 a 2022</p>
+            <div class="container-industrias">
+                <div>
+                    <div class="img-p">
+                        <p class="p-detalle">El comercio al por mayor tuvo una caída del 1.64% en 2019, teniendo una suba paulatina en 2020 y superando la cantidad de empleados a lo que se tenía en 2018 en unos 1.81%</p>
+                        <img class="img-industrias" src="Proyecto_empleo/Proyecto/Principales industrias/Comercio al por mayor excepto autos y motos.png">
+                        
+                    </div>
+                    <div class="img-p">
+                        <p class="p-detalle">En Transporte de energía terrestre y por tuberías empezó en caída en el 2018 y sigue en caída en el 2021 con un total de un 7.48%</p>
+                        <img class="img-industrias" src="Proyecto_empleo/Proyecto/Principales industrias/Transporte de energia terrestre y por tuberias.png">
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="img-p">
+                        <img class="img-industrias" src="Proyecto_empleo/Proyecto/Principales industrias/Elaboración de productos alimenticios.png">
+                        <p class="p-detalle">En la elaboración de productos alimenticios se generó una caída del 1.05% en 2019 y una recuperación hasta 2021 superando la empleabilidad del 2018 en un 0.50%</p>
+                    </div>
+        
+                    <div class="img-p">
+                        <img class="img-industrias" src="Proyecto_empleo/Proyecto/Principales industrias/Comercio al por menor excepto autos y motos.png">
+                        <p class="p-detalle">El comercio al por menor empezó el 2018 con caída de la empleabilidad y se mantuvo hasta el 2022 teniendo una caída total del 7.48%</p>
+                    </div>
+        
+                </div>
+            
+            </div>
+        </div>
+
+        <div class="container-codigo">
+            <p class="fuente-datos"><b>Fuente de datos:</b> www.datos.gob.ar<br>
+                <b>Nombre del Dataset:</b>  Puestos de trabajo registrados por sector de actividad económica en el sector privado</p>
+
+            <h3 class="h3-titulo-datos">Proceso de clasificación, limpieza, clasificación y visualización de los datos:</h3>
+            <p class="puntos-SQL"><b>1)</b> Los datos fueron extraídos directamente de la pagina oficial del gobierno de Argentina, Siendo así datos públicos. Se limpiaron los datos en Excel quitando duplicados, corregir errores estructurales, limpiar valores no deseados y revisar celdas vacías.
+                Al ser datos publicados por el gobierno no se encontraron errores ni duplicados por lo cual se prosiguió a la clasificación en SQL para obtener los datos</p>
+                <p class="puntos-SQL"><b>2)</b> Puestos de trabajos registrados en Argentina</p>
+                    <img class="" src="Proyecto_empleo/Proyecto/Encabezado/SQL-Encabezado.png">
+                <p class="puntos-SQL"><b>3)</b> Las 5 provincias que más perdieron empleas</p>
+                    <img class="" src="Proyecto_empleo/Proyecto/Top 5 provincias/SQL-Provincias.png">
+                <p class="puntos-SQL"><b>4)</b> Principales industrias a nivel nacional</p>
+                    <img class="" src="Proyecto_empleo/Proyecto/Principales industrias/SQL-Industrias.png">
+        </div>
+
+    </main>
+
+
+</body>

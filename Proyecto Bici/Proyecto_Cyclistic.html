@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto empresa Cyclistic </title>
+    <link rel="stylesheet" href="Estilo_Proyecto_Cyclistic.css">
+    <link rel="shortcut icon" href="LOGO.png" type="image/x-icon"> 
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<header>
+    <h1>Cyclistic</h1>
+    <p class="encabezado">Cyclistic es un programa de bicicletas que incluye 5,800 bicicletas y 600 estaciones. 
+        La empresa se destaca por ofrecer también bicicletas reclinadas, triciclos manuales y 
+        bicicletas de carga que ofrecen un uso más inclusivo de las bicicletas compartidas para
+         las personas con discapacidad y los ciclistas que no pueden utilizar una bicicleta estándar
+          de dos ruedas. La mayoría de los ciclistas eligen las bicicletas tradicionales, alrededor 
+          de un 8% de los ciclistas usan las opciones asistidas. Los usuarios de Cyclistic son más
+           propensos a utilizar la bicicleta para recreación, pero alrededor del 30% la utiliza 
+           para ir al trabajo cada día.</p>
+
+    <div class="container-li-puntos">
+        <h2 class="h2-puntos">La intencion de la empresa es diseñar estrategias de marketing orientadas 
+            a convertir a los ciclistas ocasionales en miembros anuales, para eso se identificaron los 
+             siguientes puntos:</h2>
+        <ul>
+            <li>Saber la cantidad de clientes casuales y miembros por día de la semana, así poder saber qué día tiene más movimiento cada uno</li>
+            <li>Saber el promedio de uso diario de clientes miembros y casuales para saber que día se usan más tiempo.</li>
+        </ul>
+    </div>
+</header>
+<body>
+
+    <main>
+        <h2 class="h2-primer-punto">Cantidad de clientes casuales y miembros por día de la semana</h2>
+        <div class="container-primer-punto">
+            <p class="descripcion-primer-punto">La grafica muestra la predominancia de los usuarios abonados durante los días de 
+                semana, reflejando  ese porcentaje considerablemente alto de cliente que lo utilizan 
+                para ir a trabajar o trabajar con la bicicleta, mostrando así una caída hacia el 
+                fin de semana y tomando preponderancia los clientes casuales usando el servicio
+                 los días de fin de semana de forma recreativa, principalmente viernes y sábados.</p>
+            <img class="img-casual_miembros" src="Cantidad de clientes casuales y miembros por día de la semana.png">
+        </div>
+    <div class="container-segundo-punto">
+            <h2 class="h2-primer-punto">Promedio de uso diario de clientes miembros y casuales</h2>
+        <div class="container-primer-punto">
+            <img class="img-casual_miembros" src="clientes_miembros.png">
+            <img class="img-casual_miembros" src="clientes_casuales.png">
+        </div>
+        <div class="container-p-description">
+            <p class="p-descripcion-segundo-punto">Los clientes casuales, 
+                aunque apenas superan en cantidad un solo día que es el viernes
+                 poseen una cantidad considerable de tiempo mas alto que los
+                  abonados fortaleciendo así el punto de que los casuales lo usan
+                   de forma recreativa y los abonados para ir de un punto A al punto B.</p>
+        </div>
+        
+    </div>
+
+    <div class="container-conclusion">
+        <p class="p-conclusion"><b>Conclusión:</b> a través del promedio de utilización se puede deducir 
+            que los clientes casuales usan las bicicletas para actividades recreativas tendiendo 
+            así la suba de clientes casuales entre viernes y sábado, no así los clientes miembros 
+            que lo usan en su mayoría para tareas específicas.</p>
+
+        <h3 class="recomendaciones-h3">Recomendaciones para captar al publico casual y poder brindarles membresías:</h3>
+        <ul class="ul-recomendaciones">
+            <li class="li-recomendaciones">Incorporar membresías mensuales y no restringir solo a membresías anuales, eso puede ahuyentar a clientes que necesitan las bicicletas solo por temporadas.</li>
+            <li class="li-recomendaciones">Crear membresías de fin de semana ejemplo (viernes, sábado, domingo) y hacer descuento por familias</li>
+            <li class="li-recomendaciones">Crear membresías especiales con descuentos para clientes que la usan solo para trabajar.</li>
+            <li class="li-recomendaciones">Crear membresía flexible, consiste en una membresía mensual en la cual el cliente informa 
+                los días del mes en que usara la bicicleta. Serviría para clientes que por ejemplo trabajan
+                 hibrido y no van todos los días a la oficina o clientes que usan el servicio para ciertas tareas 
+                 específicas en ciertos días de la semana.</li>
+        </ul>
+    </div>
+        
+    <div class="container-codigo">
+        <p class="fuente-datos"><b>Fuente de datos:</b> divvy-tripdata.s3.amazonaws.com/index.html<br><br>
+            <b>Nombre del Dataset:</b> 202208-divvy-tripdata<br><br>
+            <b>Aclaración:</b> Los conjuntos de datos tienen un nombre diferente porque Cyclistic es una empresa ficticia.
+             A los fines de este caso práctico, los conjuntos de datos son apropiados y te permitirán responder las preguntas de la empresa.
+              Los datos han sido proporcionados por Motivate International Inc.</p>
+
+        <h3 class="Proceso-datos-h3">Proceso de clasificación, limpieza, clasificación y visualización de los datos:</h3>
+        <p class="punto-uno"><b>1)</b> Se limpiaron los datos en Excel quitando duplicados, corregir errores estructurales, limpiar valores no
+             deseados y revisar celdas vacías. Al dataset original se agregaron las columnas:
+            <li>Columna con el tiempo transcurrido en cada recorrido</li>
+            <li>Columna con el día de cada recorrido</li></p>
+
+        <p class="puntos-SQL"><b>2)</b> Sacar la media, los máximos y los mínimos.</p>
+            <img class="" src="media-max-min-R.png">
+        <p class="puntos-SQL"><b>3)</b> Creación de una tabla limpia tomando solo los datos relevantes.</p>
+            <img class="" src="creacion-tabla.png">
+        <p class="puntos-SQL"><b>4)</b> Gráficos de los promedios de uso por clientes casuales y abonados.</p>
+            <img class="" src="Graficos_R.png">
+
+    </div>
+
+
+    </main>
+
+</body>
